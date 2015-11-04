@@ -1,0 +1,31 @@
+{
+  "name": "itendsinspace",
+  "version": "0.0.1",
+  "description": "Choose your own way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mw222rs/itendsinspace.git"
+  },
+  "author": "mw222rs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mw222rs/itendsinspace/issues"
+  },
+  "homepage": "https://github.com/mw222rs/itendsinspace#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-router": "^0.13.5"
+  },
+  "devDependencies": {
+    "babel": "^6.0.15",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "watchify": "^3.6.0"
+  }
+}
