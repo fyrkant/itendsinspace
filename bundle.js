@@ -19045,7 +19045,7 @@ var Test = exports.Test = (function (_React$Component) {
             return _react2.default.createElement(
                 'p',
                 null,
-                'Test'
+                'Test!'
             );
         }
     }]);
