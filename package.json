@@ -4,7 +4,12 @@
   "description": "Choose your own way.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint -f compact src",
+    "prebuild": "npm run lint",
+    "build": "browserify src/index.js -t babelify --outfile bundle.js",
+    "prewatch": "npm run lint",
+    "watch": "watchify src/index.js -t babelify --outfile bundle.js -v",
+    "sass": "sass stylesheets/style.scss css/base.css"
   },
   "repository": {
     "type": "git",
@@ -24,8 +29,11 @@
   },
   "devDependencies": {
     "babel": "^6.0.15",
+    "babel-eslint": "^4.1.4",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
+    "eslint": "^1.8.0",
+    "eslint-plugin-react": "^3.7.1",
     "watchify": "^3.6.0"
   }
 }
