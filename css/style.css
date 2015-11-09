@@ -1,0 +1,39 @@
+body {
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3em;
+}
+p.smaller {
+  font-size: 2.7em;
+}
+a {
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: rgba(255, 0, 0, 0.7);
+  text-decoration: underline;
+}
+.aligner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 24em;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+},
+.align-item {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 50%;
+}

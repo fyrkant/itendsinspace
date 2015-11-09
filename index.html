@@ -6,60 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,300italic' rel='stylesheet' type='text/css'>
-  <title>itEndsInSpace</title>
-  <style>
-    body {
-    }
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-style: italic;
-      font-size: 3em;
-    }
-    p.smaller {
-      font-size: 2.7em;
-    }
-    a {
-      font-weight: 800;
-      font-style: normal;
-      text-decoration: none;
-      color: #000;
-    }
-    a:hover {
-      color: rgba(255, 0, 0, 0.7);
-      text-decoration: underline;
-    }
-    .aligner {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      min-height: 24em;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    },
-    .align-item {
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      max-width: 50%;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" type="text/css"></link>
+  <title>ItEndsInSpace</title>
 </head>
 
 
   <body>
+      <div id="app" class="aligner">
+        <div class="aligner-item">
+          <p class="smaller">It's your choice, but I know you.</p>
+          <p class="smaller">It ends in space.</p>
+          <p><a href="https://github.com/mw222rs/itendsinspace">Here is the code.</a></p>
+        </div>        
+      </div>
 
-        <div class="aligner">
-          <div class="aligner-item">
-            <p class="smaller">This is a page.</p>
-            <p><a href="https://github.com/mw222rs/itendsinspace">Here is the code.</a></p>
-          </div>        
-        </div>
-
+      <script type="text/javascript" src="bundle.js" ></script>
   </body>
 
 </html>

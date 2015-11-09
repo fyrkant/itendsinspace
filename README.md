@@ -1,2 +1,2 @@
-# itendsinspace
-It's your choice. It'll probably end in space.
+# ...It Ends In Space
+It's your choice, but I know you. It will end in space.
