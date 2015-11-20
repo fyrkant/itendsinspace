@@ -7,6 +7,7 @@
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' src",
     "prebuild": "npm run lint",
     "build": "browserify src/index.js -t babelify --outfile bundle.js",
+    "postbuild": "echo 'phew, I am pooped!'",
     "prewatch": "npm run lint",
     "watch": "watchify src/index.js -t babelify --outfile bundle.js -v",
     "sass": "sass stylesheets/style.scss css/base.css"
@@ -22,10 +23,11 @@
   },
   "homepage": "https://github.com/mw222rs/itendsinspace#readme",
   "dependencies": {
+    "history": "^1.13.1",
     "lodash": "^3.10.1",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
-    "react-router": "^0.13.5"
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.0"
   },
   "devDependencies": {
     "babel": "^6.0.15",
