@@ -1,17 +1,11 @@
 import React from 'react';
 
 class HelloWorld extends React.Component {
-    constructor(props) {
-        super(props);        
-    }
-
     render() {
-        return (
-            <div>{this.props.text}</div>
-        );
+        return <p>{this.props.text}</p>;
     }
 }
 
-HelloWorld.propTypes = {text: React.propTypes.string };
+HelloWorld.propTypes = {text: React.propTypes.string.required};
 
 export default HelloWorld;

@@ -19040,10 +19040,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var HelloWorld = (function (_React$Component) {
     _inherits(HelloWorld, _React$Component);
 
-    function HelloWorld(props) {
+    function HelloWorld() {
         _classCallCheck(this, HelloWorld);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(HelloWorld).call(this, props));
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(HelloWorld).apply(this, arguments));
     }
 
     _createClass(HelloWorld, [{
@@ -19052,7 +19052,11 @@ var HelloWorld = (function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                this.props.text
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.text
+                )
             );
         }
     }]);
@@ -19060,7 +19064,7 @@ var HelloWorld = (function (_React$Component) {
     return HelloWorld;
 })(_react2.default.Component);
 
-HelloWorld.propTypes = { text: _react2.default.propTypes.string };
+HelloWorld.propTypes = { text: _react2.default.propTypes.string.required };
 
 exports.default = HelloWorld;
 
@@ -19081,6 +19085,6 @@ var _helloworld2 = _interopRequireDefault(_helloworld);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { text: 'Hi y\'all' }), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { text: 'Hi you all' }), document.getElementById('root'));
 
 },{"./components/helloworld":159,"react":158,"react-dom":29}]},{},[160]);
