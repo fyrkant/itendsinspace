@@ -19050,13 +19050,9 @@ var HelloWorld = (function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                'p',
                 null,
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    this.props.text
-                )
+                this.props.message
             );
         }
     }]);
@@ -19064,7 +19060,9 @@ var HelloWorld = (function (_React$Component) {
     return HelloWorld;
 })(_react2.default.Component);
 
-HelloWorld.propTypes = { text: _react2.default.propTypes.string.required };
+HelloWorld.propTypes = {
+    message: _react2.default.PropTypes.string.isRequired
+};
 
 exports.default = HelloWorld;
 
@@ -19085,6 +19083,6 @@ var _helloworld2 = _interopRequireDefault(_helloworld);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { text: 'Hi you all' }), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { message: 'Hi y\'all!' }), document.getElementById('root'));
 
 },{"./components/helloworld":159,"react":158,"react-dom":29}]},{},[160]);

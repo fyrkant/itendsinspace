@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' src",
     "prebuild": "npm run lint",
-    "build": "browserify -t [ babelify --presets [ es2015 react ] ] src/index.js > bundle.js",
+    "build": "browserify -t babelify src/index.js > bundle.js",
     "postbuild": "echo 'phew, I am pooped!'"
   },
   "repository": {
