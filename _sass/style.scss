@@ -1,0 +1,31 @@
+body {
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3em;
+}
+p.smaller {
+  font-size: 2.7em;
+}
+a {
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: rgba(255, 0, 0, 0.7);
+  text-decoration: underline;
+}
+.aligner {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+},
+.align-item {
+  flex: 1;
+  max-width: 50%;
+}

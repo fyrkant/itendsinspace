@@ -58,9 +58,11 @@
 
 	var _helloworld2 = _interopRequireDefault(_helloworld);
 
+	__webpack_require__(160);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { message: 'Hi y\'all!!' }), document.getElementById('root'));
+	_reactDom2.default.render(_react2.default.createElement(_helloworld2.default, { message: 'Howdy y\'all!!' }), document.getElementById('root'));
 
 /***/ },
 /* 1 */
@@ -19701,6 +19703,12 @@
 	};
 
 	exports.default = HelloWorld;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
