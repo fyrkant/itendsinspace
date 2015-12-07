@@ -13,7 +13,7 @@ ReactDOM.render(
 	<Provider store={store} >
 		<Router routes={routes} />
 	</Provider>,
-	document.getElementByID('root')
+	document.getElementById('root')
 );
 
 setTimeout(() => store.dispatch(actions.startListeningToStories()));

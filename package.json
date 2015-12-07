@@ -8,7 +8,7 @@
     "prebuild": "npm run lint",
     "build": "browserify -t babelify src/index.js > bundle.js",
     "postbuild": "echo 'phew, I am pooped!'",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --debug"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,11 @@
   "homepage": "https://github.com/mw222rs/itendsinspace#readme",
   "dependencies": {
     "firebase": "^2.3.2",
+    "history": "^1.14.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.0"
+    "react-router": "^1.0.0-rc3"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",

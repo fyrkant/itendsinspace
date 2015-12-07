@@ -7,11 +7,6 @@ import ReadNodes from './pages/components/readnodes';
 
 export default (
 	<Route component={Wrapper} path="/" >
-		<Route component={MultiRoute} path="read">
-			<Route component={ReadNodes} path=":key">
-				<Route component={ReadNodes} path=":choice" />
-			</Route>
-			<IndexRoute component={ReadHome} />
-		</Route>
+		<IndexRoute component={ReadHome} />
 	</Route>
 );
