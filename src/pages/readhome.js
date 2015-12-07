@@ -3,20 +3,20 @@ import {connect} from 'react-redux';
 
 class ReadHome extends React.Component {
     render() {
-        console.log(this.props.stories);
+        console.log(this.props);
         return (
             <div></div>
         );
     }
 }
 
-let mapStateToProps = (appState) => {
+const mapStateToProps = (appState) => {
     return {
-        stories: appState.stories
+        stories: appState.done
     };
 };
 
-let mapDispatchToProps = () => {
+const mapDispatchToProps = () => {
     return {
 
     };

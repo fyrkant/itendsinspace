@@ -1,8 +1,8 @@
-import {Component} from 'react';
+import React from 'react';
 
-
-class Wrapper extends Component {
+class Wrapper extends React.Component {
     render() {
+        console.log('hello');
         return (
             <div>
                 {this.props.children}

@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
-import stories from './stories';
+import done from './done';
+import writing from './writing';
 
 let rootReducer = combineReducers({
-    stories
+    done,
+    writing
 });
 
 export default rootReducer;
