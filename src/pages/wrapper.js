@@ -1,14 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router';
 
-class Wrapper extends React.Component {
+
+export class Wrapper extends React.Component {
     render() {
         console.log('hello');
         return (
             <div>
+                <Link to={"read"}>Read</Link>
                 {this.props.children}
             </div>
         );
     }
 }
-
-export default Wrapper;

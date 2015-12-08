@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-class ReadHome extends React.Component {
+export class ReadIndex extends React.Component {
     render() {
-        console.log(this.props);
+        console.log(this.props.stories);
         return (
-            <div></div>
+            <div>Helo</div>
         );
     }
 }
@@ -22,4 +22,4 @@ const mapDispatchToProps = () => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReadHome);
+export default connect(mapStateToProps, mapDispatchToProps)(ReadIndex);
