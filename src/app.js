@@ -6,7 +6,7 @@ import store from './store';
 import routes from './routes';
 import actions from './actions';
 
-// Styles for Wenbpack to process and spit out .css
+// Styles for Webpack to process and spit out .css
 import '../_sass/style.scss';
 
 ReactDOM.render(
